@@ -1,5 +1,5 @@
-# Mithril Starter Kit
-A boilerplate Mithril application using ES6, Babel, Webpack 4, Sass/SCSS, Webpack dev server hot reload and eslint
+# Mithril Instagrid
+A mithril powered site drop-in for a bare bones instagram grid.
 
 ### How to use
 By using [degit](https://github.com/Rich-Harris/degit)
