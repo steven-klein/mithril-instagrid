@@ -1,0 +1,53 @@
+[data-instagram-grid] {
+  box-sizing: border-box;
+}
+
+.instagrid-list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-auto-rows: 0;
+}
+
+.instagrid-item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.instagrid-item-contents {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.instagrid-link {
+  box-sizing: border-box;
+  display: block;
+  line-height: 0;
+}
+
+.instagrid-img-container {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagrid-img {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 350ms linear 250ms;
+}
+
+.instagrid-img-loaded .instagrid-img {
+  box-sizing: border-box;
+  opacity: 1;
+}
