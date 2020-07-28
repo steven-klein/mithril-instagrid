@@ -6,7 +6,7 @@ import SplashLoader from '../splash-loader';
 
 function filterData(id, data) {
     return data.filter((item) => { 
-        return (item.node.owner.username === id && item.node.is_video === false);
+        return (item.node.owner.username === id);
     });
 }
 
@@ -20,7 +20,7 @@ export default () => {
                         return extractData(document);
                     },
                 },
-            });
+            }); 
 
             vnode.state.store.fetch();
         },
@@ -31,7 +31,7 @@ export default () => {
                     m('ul.instagrid-list', filterData(
                         vnode.attrs.id,
                         vnode.state.store.data.user.edge_owner_to_timeline_media.edges,
-                    ).slice(0, 9).map((item) => {
+                    ).slice(0, vnode.attrs.count).map((item) => {
                         return m(GridItem, item.node);
                     })) : null
                 );

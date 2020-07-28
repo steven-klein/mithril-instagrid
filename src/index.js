@@ -14,6 +14,7 @@ document.querySelectorAll('[data-instagram-grid]').forEach((el) => {
         view() {
             return m(Grid, {
                 id: el.getAttribute('data-instagram-grid') || null,
+                count: el.getAttribute('data-instagram-grid-count') || 12,
             });
         },
     });
