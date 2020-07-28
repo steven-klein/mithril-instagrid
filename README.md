@@ -2,14 +2,12 @@
 A mithril powered site drop-in for a bare bones instagram grid.
 
 ### How to use
-By using [degit](https://github.com/Rich-Harris/degit)
+Clone it
 ```shell
-npx degit dhinesh03/mithril-starter-kit mithril-starter-kit
-or
-git clone https://github.com/dhinesh03/mithril-starter-kit
+git clone git@github.com:steven-klein/mithril-instagrid.git
 ```
-or
-[Download the source](https://github.com/dhinesh03/mithril-starter-kit/zipball/master)
+
+Run it
 ```shell
 cd mithril-starter-kit
 
